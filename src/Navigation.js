@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import SwipeableViews from 'react-swipeable-views';
-
-
 import Home from './Home';
-import TechnicalExpertise from './TechnicalExpertise';
+import ImpossibleList from './ImpossibleList';
 import Projects from './Projects';
 
 injectTapEventPlugin();
@@ -34,8 +32,7 @@ export default class Navigation extends Component {
           value={this.state.slideIndex}
         >
           <Tab label="About Me" value={0} />
-          <Tab label="Technical Expertise" value={1} />
-          <Tab label="Projects" value={2} />
+          <Tab label="Projects" value={1} />
           <Tab label="Impossible List" value={2} />
         </Tabs>
         <SwipeableViews
@@ -45,14 +42,11 @@ export default class Navigation extends Component {
           <div>
             <Home />
           </div>
-          <div >
-            <TechnicalExpertise />
-          </div>
           <div>
             <Projects />
           </div>
           <div>
-            slide n°3
+            <ImpossibleList />
           </div>
         </SwipeableViews>
       </div>

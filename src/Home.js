@@ -7,14 +7,22 @@ import Star from 'material-ui/svg-icons/action/stars';
 import profile from './img/profilephoto.jpg';
 import UW from './img/uw.png';
 import WLU from './img/wlu.png';
+import RaisedButton from 'material-ui/RaisedButton';
 
 export default class Home extends Component {
 
   render() {
     return (
-      <Grid style={{marginTop: "10px", marginBottom: "-1000px"}}>
+      <Grid style={{marginTop: "10px", marginBottom: "10px"}}>
         <Row middle="xs">
           <Col md={5}>
+            <RaisedButton
+              style={{marginBottom: "40px"}}
+              href="./Resume.pdf"
+              target="_blank"
+              label="Check Out My Resume"
+              secondary={true}
+            />
            <Card>
             <CardMedia>
               <img src={profile} alt="Profile"/>
