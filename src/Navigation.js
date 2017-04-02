@@ -10,10 +10,9 @@ export default class Navigation extends Component {
   render() {
     return (
       <Tabs>
-        <Tab label="Home">
+        <Tab label="About Me">
           <Home />
         </Tab>
-        <Tab label="About Me" />
         <Tab label="Technical Expertise" />
         <Tab label="Projects" />
         <Tab label="Impossible List" />
