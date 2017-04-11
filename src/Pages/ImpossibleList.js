@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {Card, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import banner from './img/bridge.png';
+import banner from '../img/bridge.png';
 
 
 export default class ImpossibleList extends Component {
 
   render() {
     return (
-      <Card style={{marginTop: "30px", marginLeft: "30px", marginRight: "30px"}}>
+      <Card style={{marginTop: "30px", marginLeft: "10px", marginRight: "10px", marginBottom: "30px"}}>
         <CardMedia>
           <img src={banner} alt="banner"/>
         </CardMedia>
@@ -16,10 +16,18 @@ export default class ImpossibleList extends Component {
           This is similar to a bucket list, but for active growth rather than passive encouragement. The following list is my ongoing checklist of goals that are important to me.
         </CardText>
 
+        <CardTitle title="Currently In Progress" />
+        <CardText>
+          <ul style={{marginLeft: "-20px"}}>
+            <li> Achieve bodyweight of 185lbs </li>
+            <li> Create an app/website </li>
+          </ul>
+        </CardText>
+
 
         <CardTitle title="Recently Completed" />
         <CardText>
-          <ul>
+          <ul style={{marginLeft: "-20px"}}>
             <li> Ski Delirium Dive (Sunshine, AB) (Completed: February 19, 2017)</li>
             <li> Achieve 8% body fat (Completed: September 18, 2016) </li>
             <li> Bench Press 135lbs for 8 reps (Completed: August 5, 2016) </li>
@@ -31,10 +39,9 @@ export default class ImpossibleList extends Component {
 
         <CardTitle title="Fitness & Health Goals" />
         <CardText>
-          <ul>
+          <ul style={{marginLeft: "-20px"}}>
             <li> <strike>Achieve 8% body fat</strike> (Completed: September 18, 2016) </li>
-            <li> <b>Hit all novice strength standards for my bodyweight (In Progress) </b></li>
-            <li> <b>Run a 5K (under 30min)</b></li>
+            <li> <b> Achieve bodyweight of 185lbs </b></li>
             <li> <b>Handstand Walk 10m</b></li>
             <li> <b>Complete a Bouldering Course</b></li>
             <li> <b>Achieve Lean Body Mass of 165lbs</b></li>
@@ -48,9 +55,8 @@ export default class ImpossibleList extends Component {
 
         <CardTitle title="Professional Goals" />
         <CardText>
-          <ul>
+          <ul style={{marginLeft: "-20px"}}>
             <li><strike></strike>Work at a tech company (Completed: May 2, 2016)</li>
-            <li><b>Work at a ‘Holy Trinity’ Company (Apple or Google or Facebook)</b></li>
             <li><strike></strike>Learn HTML and CSS (Completed: February 24, 2016)</li>
             <li><strike>Make this website</strike>(Completed: May 10, 2016)</li>
             <li><strike>Learn JavaScript</strike> (Completed: April 26, 2016)</li>
@@ -76,7 +82,7 @@ export default class ImpossibleList extends Component {
 
         <CardTitle title="Creative Goals" />
         <CardText>
-          <ul>
+          <ul style={{marginLeft: "-20px"}}>
             <li><b>Make a YouTube video that gets over 1 million views</b></li>
             <li><b>Make an electronic track </b></li>
             <li><b>Make an entire rap album </b></li>
@@ -86,7 +92,7 @@ export default class ImpossibleList extends Component {
 
         <CardTitle title="Skill Goals" />
         <CardText>
-          <ul>
+          <ul style={{marginLeft: "-20px"}}>
             <li><b>Become fluent in German</b></li>
             <li><b>Get all 416 Completion Badges in CodeAcademy (do every project, course, quiz, etc) (In Progress: 144/416)</b></li>
             <li><b>Become fluent in Spanish</b></li>
@@ -102,7 +108,7 @@ export default class ImpossibleList extends Component {
 
         <CardTitle title="Fun/Insane Goals" />
         <CardText>
-          <ul>
+          <ul style={{marginLeft: "-20px"}}>
             <li><b>Bungee Jump</b></li>
             <li><b>Skydive</b></li>
             <li><b>Climb a mountain</b></li>
@@ -116,7 +122,7 @@ export default class ImpossibleList extends Component {
 
         <CardTitle title="Events to Attend" />
         <CardText>
-          <ul>
+          <ul style={{marginLeft: "-20px"}}>
             <li><b>St.Patrick’s Day in Dublin, Ireland</b></li>
             <li><b>Mardi Gras in New Orleans, USA</b></li>
             <li><b>Carnival de Nice in Nice, France</b></li>
@@ -130,7 +136,7 @@ export default class ImpossibleList extends Component {
 
         <CardTitle title="Travel Goals" />
         <CardText>
-          <ul>
+          <ul style={{marginLeft: "-20px"}}>
             <li><b>Visit UAE</b></li>
             <li><b>Visit Japan</b></li>
             <li><b>Visit China</b></li>
@@ -143,7 +149,7 @@ export default class ImpossibleList extends Component {
 
         <CardTitle title="Life Goals" />
         <CardText>
-          <ul>
+          <ul style={{marginLeft: "-20px"}}>
             <li><b>Live to 90</b></li>
             <li><b>Graduate from uni</b></li>
             <li><b>Be very self-sufficient</b></li>
