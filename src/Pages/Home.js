@@ -3,36 +3,53 @@ import {Card, CardHeader, CardMedia, CardTitle, CardText, CardActions} from 'mat
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Barbell from 'material-ui/svg-icons/places/fitness-center';
 import GradHat from 'material-ui/svg-icons/social/school';
-import Star from 'material-ui/svg-icons/action/stars';
+import DeviceHub from 'material-ui/svg-icons/hardware/device-hub';
+import PlayArrow from 'material-ui/svg-icons/av/play-arrow';
+import DevMode from 'material-ui/svg-icons/device/developer-mode';
 import profile from '../img/profilephoto.jpg';
 import RaisedButton from 'material-ui/RaisedButton';
+import AppBar from 'material-ui/AppBar';
+import banner from '../img/bridge.png';
+import FontIcon from 'material-ui/FontIcon';
 
 export default class Home extends Component {
 
   render() {
     return (
-      <Grid >
-        <Row middle="xs">
-          <Col md={5}>
+      <div>
+      <AppBar title="Jared Gee's Portfolio" showMenuIconButton={false}/>
 
-           <Card style={{marginTop: "10px", marginBottom: "10px", marginRight: "30px", marginLeft: "30px"}}>
-            <CardMedia>
-              <img src={profile} alt="Profile"/>
-            </CardMedia>
+      
+
+      <Grid>
+        <Row middle="xs">
+          <Col md={12}>
+            <Card style={{marginTop: "30px", marginLeft: "10px", marginRight: "10px", marginBottom: "30px"}}>
+              <CardMedia>
+                <img src={banner} alt="banner"/>
+              </CardMedia>
+            </Card>
+          </Col>
+        </Row>
+        <Row middle="xs">
+          <Col md={4}>
+            <Card style={{marginTop: "10px", marginBottom: "10px", marginRight: "30px", marginLeft: "30px"}}>
             <CardTitle
               title="I am Jared Gee"
-              subtitle="Full Stack Developer, Self-Mastery Blogger, Graphic Designer, Web App Creator, Fitness Fanatic"/>
+              subtitle="Full Stack Developer, Music Producer, Graphic Designer, Fitness Addict, Creation Fanatic"/>
             <CardActions style={{marginLeft: "auto", marginRight: "auto"}}>
               <RaisedButton
                 style={{marginLeft: "5px", marginBottom: "10px"}}
                 href="./Resume.pdf"
                 target="_blank"
                 label="Check Out My Resume"
-                secondary={true}
+                primary
               />
             </CardActions>
-          </Card>
+           </Card>
           </Col>
+
+
           <Col md={7}>
             <Card style={{marginTop: "10px", marginRight: "30px", marginLeft: "30px"}}>
               <CardHeader
@@ -44,8 +61,8 @@ export default class Home extends Component {
               />
               <CardText>
                 <div style={{marginLeft: "15px"}}>
-                  I have a passion for all things computer-related.
-                  I continue to strive for success and visual appeal in my programs,
+                  I have a strong passion for creating things.
+                  I always aim for effectiveness and visual appeal in my programs,
                   artwork, and side projects.
                 </div>
               </CardText>
@@ -73,21 +90,34 @@ export default class Home extends Component {
               <CardHeader
                 title={
                   <div>
-                    Scholarships & Awards
-                    <Star style={{height: "20px", marginTop: "10px"}} />
+                    Projects
+                    <DevMode style={{height: "20px", marginTop: "10px"}} />
                   </div>
                 }
               />
               <CardText>
                 <div style={{marginLeft: "15px"}}>
-                  I received the 2015 Alexandar Rutherford High School
-                  Achievement Scholarship, along with the 2015 President's Scholarship at the University of Waterloo.
-                  I obtained a Finalist position in the BDO New Venture
-                  Competition, a Semi-Finalist position in the Pepsico Pitch Competition,
-                  and a Semi-Finalist position in the Blackberry Messenger Case Competition.
-                  All three events were hosted by Wilfrid Laurier University
+                  See my projects on GitHub and my music on YouTube.
                 </div>
               </CardText>
+              <CardActions style={{marginLeft: "auto", marginRight: "auto"}}>
+              <RaisedButton
+                style={{marginLeft: "5px", marginBottom: "10px"}}
+                href="https://github.com/jayster55"
+                target="_blank"
+                label="GitHub"
+                icon={<DeviceHub />}
+                primary
+              />
+              <RaisedButton
+                style={{marginLeft: "5px", marginBottom: "10px"}}
+                href="https://www.youtube.com/channel/UCC8okc1rOMf5-8IH352QwKA"
+                target="_blank"
+                label="YouTube"
+                icon={<PlayArrow />}
+                primary
+              />
+            </CardActions>
             </Card>
 
             <Card style={{marginRight: "30px", marginLeft: "30px", marginBottom: "40px"}}>
@@ -101,16 +131,15 @@ export default class Home extends Component {
               />
               <CardText>
                 <div style={{marginLeft: "15px"}}>
-                  When I'm not working hard at school,
-                  I'm still working hard everywhere else:
-                  you can find me pumping iron at the gym,
-                  perfecting my prose on my blog, or making new friends at events and activities.
+                  I love producing music, editing videos, powerlifting, wakeboarding, alpine skiing,
+                  and rugby.
                 </div>
               </CardText>
             </Card>
           </Col>
         </Row>
       </Grid>
+      </div>
     );
   }
 }
