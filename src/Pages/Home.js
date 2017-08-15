@@ -6,11 +6,9 @@ import GradHat from 'material-ui/svg-icons/social/school';
 import DeviceHub from 'material-ui/svg-icons/hardware/device-hub';
 import PlayArrow from 'material-ui/svg-icons/av/play-arrow';
 import DevMode from 'material-ui/svg-icons/device/developer-mode';
-import profile from '../img/profilephoto.jpg';
 import RaisedButton from 'material-ui/RaisedButton';
 import AppBar from 'material-ui/AppBar';
 import banner from '../img/bridge.png';
-import FontIcon from 'material-ui/FontIcon';
 
 export default class Home extends Component {
 
