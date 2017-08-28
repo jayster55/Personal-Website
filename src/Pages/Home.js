@@ -95,7 +95,7 @@ export default class Home extends Component {
               />
               <CardText>
                 <div style={{marginLeft: "15px"}}>
-                  See my projects on GitHub and my music on YouTube.
+                  Check out my projects on GitHub.
                 </div>
               </CardText>
               <CardActions style={{marginLeft: "auto", marginRight: "auto"}}>
@@ -105,14 +105,6 @@ export default class Home extends Component {
                 target="_blank"
                 label="GitHub"
                 icon={<DeviceHub />}
-                primary
-              />
-              <RaisedButton
-                style={{marginLeft: "5px", marginBottom: "10px"}}
-                href="https://www.youtube.com/channel/UCC8okc1rOMf5-8IH352QwKA"
-                target="_blank"
-                label="YouTube"
-                icon={<PlayArrow />}
                 primary
               />
             </CardActions>
