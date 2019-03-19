@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Dashboard</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet"/>
+  <link rel="shortcut icon" type="image/png" href="static/favicon.ico"/>
+</head>
+<body>
+<div class="navbar-fixed">
+  <nav class="nav-extended black">
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab white-text"><a href="#1">Jared Gee</a></li>
+        <li class="tab white-text"><a href="#2">My Work</a></li>
+        <li class="tab white-text"><a href="#3">Projects</a></li>
+        <li class="tab white-text"><a href="#4">Future Ventures</a></li>
+        <li class="tab white-text"><a href="#5">Upcoming Events</a></li>
+        <li class="tab white-text"><a href="#6">Social Media</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+<div id="1" class="col s12">
+  <div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container center" style=" ">
+        <div class="row center">
+            <h5 class="header light">Hi, my name is Jared Gee and I am a</h5>
+        </div>
+        <span class="element" style="font-size: 8vh;" id="typed"></span>
+        <div class="row center">
+        </div>
+      </div>
+      <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+  </div>
+</div>
+    
+<div id="2"> 
+    <div class="row">
+        <div class="col s9 offset-s1">
+            <h2> My Work </h2>
+            <p class="flow-text">
+            I am am a software developer, with a passion for making excellent deliverables in record time. 
+            </p>
+            <p class="flow-text">
+            I am detail oriented, creatively driven, and always thinking of the next big thing. 
+            </p>
+            <p class="flow-text">
+            In the past, I've worked on POCs, Data Analytics, QA Testing and Blockchain Infrastructure.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s3 offset-s1">
+            <h3> Software Expertise </h3>
+                <ul class="flow-text">
+                    <li> Web: HTML, CSS, JS, jQuery, React, Redux </li>
+                    <li> Imperative: </li>
+                    <li> Functional: Scala, Kotlin</li>
+                    <li> Data: Python, Postgres, TSQL, NumPy, Pandas</li>
+                    <li> Terminal: Vim, Git, Mercurial, Bash</li>
+                    <li> Mobile: React Native</li>
+                </ul>
+            
+        </div>
+        <div class="col s3 offset-s1">
+            <h4> Previous Positions</h4>
+            <h6> Hello here are my programming languages </h6>
+        </div>
+        <div class="col s3 offset-s1">
+            <h4> Books I'm Reading </h4>
+            <h6> Hello here are my programming languages </h6>
+        </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        var typed = new Typed(".element", {
+          strings: ["Software Developer", "Sound Engineer", "Graphic Designer", "Video Producer", "Tea Connoisseur", "Vim Maestro", "Powerlifter"],
+          smartBackspace: true, // Default value
+            startDelay: 1000,
+            backDelay: 700,
+            backSpeed: 60,
+            typeSpeed: 60,
+            loop: true
+        }); 
+    </script>
+  </body>
+</html>
+
