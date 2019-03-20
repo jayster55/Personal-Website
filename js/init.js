@@ -15,7 +15,7 @@
         if( target.length ) {
             event.preventDefault();
             $('html, body').stop().animate({
-                scrollTop: target.offset().top - 40
+                scrollTop: target.offset().top - 45 
             }, 1000);
         }
     });
